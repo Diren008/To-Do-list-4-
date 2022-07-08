@@ -1,215 +1,228 @@
 /* Basic Style */
 body {
-    background: rgb(0, 0, 0);
-    color: #333;
-    font-family: "Montserrat";
-  }
-  
-     /* site scrollbar */
-     ::-webkit-scrollbar {
-      width: 8px;
-      height: 9px;
-  }
-  ::-webkit-scrollbar-track {
-      background: rgb(43, 42, 42);
-      border-radius: 10px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-      background: #ffe922;
-      border-radius: 50px;
-  }
-  
+  background: rgb(0, 0, 0);
+  color: #333;
+  font-family: "Montserrat";
+}
+
+/* site scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(43, 42, 42);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffe922;
+  border-radius: 50px;
+}
+
 
 /* animation for the heading */
-  .heading{
-    position: relative;
-    width: 24em;
-    margin: 0 auto;
-    border-right: 2px solid rgba(253, 253, 253, 0.75);
-    color: #ffffff;
-    font-size: 180%;
+.heading {
+  position: relative;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(253, 253, 253, 0.75);
+  color: #ffffff;
+  font-size: 180%;
 
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);    
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
 }
 
 /* Animation */
-.heading{
+.heading {
   animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 4s steps(44) infinite normal;
-}
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 10em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+    blinkTextCursor 4s steps(44) infinite normal;
 }
 
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 10em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, .75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
 
 
-  .container {
-    display: block;
-    width: 400px;
-    margin: 100px auto 0;
-  }
-  
-  /* Task list */
-  #backgroundVideo {
-    width: 100%;
-  }
-  
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  li * {
-    float: left;
-  }
-  
-  li,
-  h3 {
-    clear: both;
-    list-style: none;
-  }
-  
-  input,
-  button {
-    outline: none;
-  }
-  
-  button {
-    background: none;
-    border: 0px;
-    color: #ffe922;
-    font-size: 15px;
-    width: 60px;
-    margin: 10px 0 0;
-    font-family: Montserrat;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    color: #ffe922;
-  }
-  
-  /* Heading */
-  h3,
-  label[for='newTasks'] {
-    color: #ffe922;
-    font-weight: 700;
-    font-size: 15px;
-    border-bottom: 2px solid #ffe922;
-    padding: 30px 0 10px;
-    margin: 0;
-    text-transform: uppercase;
-  }
-  
-  input[type="text"] {
-    margin: 0;
-    font-size: 18px;
-    line-height: 18px;
-    height: 18px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    background: #fff;
-    border-radius: 6px;
-    font-family: Montserrat;
-    color: #2f2d31;
-  }
-  
-  input[type="text"]:focus {
-    color: #000000;
-  }
-  
-  /* New Task */
-  label[for='newTasks'] {
-    display: block;
-    margin: 0 0 20px;
-  }
-  
-  input#newTasks {
-    float: left;
-    width: 318px;
-  }
-  
-  p>button:hover {
-    color: #0FC57C;
-  }
-  
-  /* Task list */
-  li {
-    overflow: hidden;
-    padding: 20px 0;
-    border-bottom: 1px solid #ffe922;
-  }
-  
-  li>input[type="checkbox"] {
-    margin: 0 10px;
-    position: relative;
-    top: 15px;
-  }
-  
-  li>label {
-    font-size: 18px;
-    line-height: 40px;
-    width: 237px;
-    padding: 0 0 0 11px;
-  }
-  
-  li>input[type="text"] {
-    width: 226px;
-  }
-  
-  li>.remove:hover {
-    color: #CF2323;
-  }
-  
-  
-  /* To-Do */
-  #toDoTasks label {
-    color: #ffffff;
-  }
-  
-  /* Completed */
-  #completedTasks label {
-    text-decoration: line-through;
-    color: #8b8232;
-  }
-  
-  /* Edit Task */
-  ul li input[type=text] {
-    display: none;
-  }
-  
-  ul li.editMode input[type=text] {
-    display: block;
-  }
-  
-  ul li.editMode label {
-    display: none;
-  }
-  
-  /* Background block */
-  #background {
-    width: 400px;
-    background-color: rgba(255, 233, 233, 0.13);
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    border-radius: 10px;
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
-    border: 2px solid #ffe922;
-    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
-    padding: 50px 35px;
-  }
-  
 
-  /*Order section*/
+.container {
+  display: block;
+  width: 400px;
+  margin: 100px auto 0;
+}
+
+/* Task list */
+#backgroundVideo {
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li * {
+  float: left;
+}
+
+li,
+h3 {
+  clear: both;
+  list-style: none;
+}
+
+input,
+button {
+  outline: none;
+}
+
+button {
+  background: none;
+  border: 0px;
+  color: #ffe922;
+  font-size: 15px;
+  width: 60px;
+  margin: 10px 0 0;
+  font-family: Montserrat;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #ffe922;
+}
+
+/* Heading */
+h3,
+label[for='newTasks'] {
+  color: #ffe922;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #ffe922;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+input[type="text"] {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Montserrat;
+  color: #2f2d31;
+}
+
+input[type="text"]:focus {
+  color: #000000;
+}
+
+/* New Task */
+label[for='newTasks'] {
+  display: block;
+  margin: 0 0 20px;
+}
+
+input#newTasks {
+  float: left;
+  width: 318px;
+}
+
+p>button:hover {
+  color: #0FC57C;
+}
+
+/* Task list */
+li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #ffe922;
+}
+
+li>input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+}
+
+li>label {
+  font-size: 18px;
+  line-height: 40px;
+  width: 237px;
+  padding: 0 0 0 11px;
+}
+
+li>input[type="text"] {
+  width: 226px;
+}
+
+li>.remove:hover {
+  color: #CF2323;
+}
+
+
+/* To-Do */
+#toDoTasks label {
+  color: #ffffff;
+}
+
+/* Completed */
+#completedTasks label {
+  text-decoration: line-through;
+  color: #8b8232;
+}
+
+/* Edit Task */
+ul li input[type=text] {
+  display: none;
+}
+
+ul li.editMode input[type=text] {
+  display: block;
+}
+
+ul li.editMode label {
+  display: none;
+}
+
+/* Background block */
+#background {
+  width: 400px;
+  background-color: rgba(255, 233, 233, 0.13);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 2px solid #ffe922;
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+}
+
+
+/*Order section*/
