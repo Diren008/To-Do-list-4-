@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <!-- StyleSheet & Font -->
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+        <!-- JavaScript -->
+        <script type="text/javascript" src="/java/javascript.js" async></script>
+        <script type="text/javascript" src="/java/javascript2.js" async></script>
+
+        <script data-require="jquery@1.9.1" data-semver="1.9.1" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <video autoplay muted loop src="/media/black&whiteSky.mp4" alt="timeLoopVideo" id="backgroundVideo"> </video>
+        <div id="background">
+            <div class="container">
+                <p class="heading">TO-DO LIST 2022</p>
+                <!-- New Task Section -->
+                <div class="addItemSection">
+                    <label for="newTasks">Add Item</label><input id="newTasks" type="text"><input type="date"><button>add</button>
+                </div>
+
+                <!-- To-do Section -->
+                <h3>To-do Items</h3>
+                <ul id="toDoTasks">
+                    <li><input type="checkbox"><label>Submit Assignment</label><input type="text"><button
+                            class="edit">edit</button><button class="remove">remove</button></li>
+
+                    <!-- Editable task -->
+
+                    <li class="editMode"><input type="checkbox"><label>Go Shopping</label><input type="text"
+                            value="Go Shopping"><button class="edit">edit</button><button class="remove">remove</button>
+                    </li>
+
+                </ul>
+
+                <!-- Completed section -->
+
+                <div class="completedSection">
+                    <h3>Completed Tasks</h3>
+                    <button id="sortList">ORDER</button>
+                    <ul id="completedTasks">
+                        <li><input type="checkbox" checked id="sorted"><label>See the Doctor</label><input type="text"><button
+                                class="edit">edit</button><button class="remove">remove</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
